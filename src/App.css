@@ -1,0 +1,61 @@
+@import "./colors.css";
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: clamp(60px, 18vw, 90px);
+}
+.hero-text h3 {
+    font-size: clamp(15px, 4.6vw, 22px);
+}
+
+.hero-text span {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.landing button {
+    position: relative;
+    top: 25%;
+    width: clamp(90px, 20vw, 150px);
+    /* width: 90px; */
+    height: 60px;
+    background-color: transparent;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.4);
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    transition: 300ms;
+}
+
+.landing button:hover {
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.landing button:active {
+    box-shadow: 0 0 20px 2px crimson;
+    color: crimson;
+    scale: 0.95;
+    border-bottom: 2px solid crimson;
+}
